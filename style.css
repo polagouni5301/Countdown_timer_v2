@@ -1,0 +1,148 @@
+:root {
+  --gradient-start: #4a0080;  /* Deep purple */
+  --gradient-end: #9d50bb;    /* Light purple */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.countdown-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  flex: 0 0 50%;
+  margin: 0 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#countdown {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-block span {
+  font-size: 4rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 15px;
+  min-width: 120px;
+}
+
+.time-block .label {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  background: none;
+  padding: 0;
+  min-width: auto;
+}
+
+.bike-container {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+}
+
+.bike-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.bike-container img:hover {
+  transform: scale(1.05);
+}
+
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 1200px) {
+  .bike-container {
+    flex: 0 0 150px;
+  }
+
+  .countdown-container {
+    flex: 0 0 60%;
+    padding: 2rem;
+  }
+
+  .time-block span {
+    font-size: 3rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #app {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .bike-container {
+    flex: 0 0 auto;
+    width: 60%;
+    max-width: 200px;
+  }
+
+  .countdown-container {
+    width: 90%;
+    margin: 2rem 0;
+  }
+
+  #countdown {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .time-block span {
+    font-size: 2.5rem;
+    min-width: 80px;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
