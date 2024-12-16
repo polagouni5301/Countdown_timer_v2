@@ -1,0 +1,54 @@
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+
+# Logs
+logs
+*.log
+logs/**/*.log
+
+# Dependency directories
+/bower_components
+/.pnp
+.pnp.js
+
+# Production build files
+/dist
+/build
+
+# Cache files
+.cache/
+.parcel-cache/
+.next/
+.vscode/
+.idea/
+.DS_Store
+*.swp
+Thumbs.db
+
+# Testing-related
+/coverage
+jest-cache/
+jest-config/
+
+# Editor and OS-specific files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+*.orig
+*.save
+*.sass-cache
+*.log
+*~.nib
+
+# Typescript
+*.tsbuildinfo
+
+# Others
+.vscode/
+.vscode-test/
+.history/

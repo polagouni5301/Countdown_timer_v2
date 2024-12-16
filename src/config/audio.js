@@ -7,8 +7,8 @@ export const audioConfig = {
   specialVideo: {
     videoId: "afFD-0TmIGg",
     duration: 202, // 3:22 in seconds
-    // startTime: new Date('2024-12-16T23:40:00') // 8:26 PM
-    startTime: new Date('2024-12-17T20:26:00') // 8:26 PM
+    startTime: new Date('2024-12-17T00:06:00') // 8:26 PM
+    // startTime: new Date('2024-12-17T20:26:00') // 8:26 PM
   },
   options: {
     autoplay: 0,
