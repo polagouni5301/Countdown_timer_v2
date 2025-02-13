@@ -14,7 +14,7 @@ const player = createYouTubePlayer(audioConfig.defaultVideo.videoId, audioConfig
 document.body.appendChild(player);
 
 // Set the countdown date
-const countdownDate = new Date('2024-12-17T20:30:00');
+const countdownDate = new Date('2025-02-14T20:30:00');
 
 // Update countdown
 function updateCountdown() {

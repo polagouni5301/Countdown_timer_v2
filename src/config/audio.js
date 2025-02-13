@@ -1,7 +1,7 @@
 // Configuration for background music
 export const audioConfig = {
   defaultVideo: {
-    videoId: "jfKfPfyJRdk",
+    videoId: "afFD-0TmIGg",
     duration: 204 // 3:24 in seconds
   },
   specialVideo: {
